@@ -134,6 +134,7 @@ nav li a{
 /* Main Section */
 main section{
     margin-top: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -168,6 +169,7 @@ main section{
     width: 280px;
     height: 350px;
 }
+
 .videos-title{
     color: var(--p-tag-color);
     font-size: 1.2rem;
@@ -183,9 +185,8 @@ main section{
     align-items: center;
 }
 .play-content{
-    margin-left: 40px;
     position: relative;
-    bottom: 120px;
+    bottom: 125px;
     
 }
 .play-title{
@@ -202,13 +203,14 @@ main section{
 }
 .play-description{
     color: var(--p-tag-color);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 30px;
 }
 .play-image{
     width: 50%;
-    margin: 0 40px;
+    /* margin: 0 30px; */
+    margin-right: 30px;
 }
 .play-image img{
     width: 630px;
@@ -217,11 +219,12 @@ main section{
 .play-sm-img{
     position: relative;
     bottom: 295px;
-    right: 130px;
+    right: 110px;
 }
 .play-sm-img img{
-    width: 300px;
-    height: 350px;
+    width: 290px;
+    height: 340px;
+
 }
 
 /* More Game Section Style */
@@ -232,33 +235,29 @@ main section{
     gap: 30px;
     
 }
-.more-game-content :hover{
-    border: 2px solid #FF42A5;
-    /*margin: 8px 10px;
-    */padding: 8px 11px;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background: var(--linear-pink-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
+
 .more-game{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: #fff;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .more-game img{
     width:20% ;
 }
 .more-game p{
+    margin-left: 10px;
     font-size: 0.8rem;
 }
+
+
 
 /* Footer Section Style */
 .footer{
@@ -386,10 +385,11 @@ main section{
     /* Play Instantly section */
     .play-content{
         bottom: 0;
+        margin-left: 40px;
     }
     .play-title{
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 600;
     }
     .play-description{
         font-size: 1rem;
@@ -409,6 +409,21 @@ main section{
         top: 190px;
         left: 90px;
     }
+       /* More Game */
+       .more-game-content{
+        grid-template-columns:repeat(3,3fr);
+        margin-right: 20px;
+    }
+    .more-game img{
+        width: 30%;
+    }
+    .more-game p{
+        font-size: 0.6rem;
+    }
+    .game{
+       padding: 0 5px;
+    }
+
     /* Footer Section */
     .footer-link{
         grid-template-columns: repeat(3,2fr);
@@ -435,8 +450,8 @@ main section{
         margin-left: 40px;
     }
     .copyright p{
-        font-size: 0.8rem;
-        margin-left: 22px;
+        font-size: 0.7rem;
+        margin-left: 20px;
     }
-
+ 
 }
