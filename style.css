@@ -133,8 +133,8 @@ nav li a{
 
 /* Main Section */
 main section{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
 }
 
@@ -183,7 +183,6 @@ main section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
 }
 .play-content{
     position: relative;
@@ -191,7 +190,7 @@ main section{
     
 }
 .play-title{
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 50px;
     color: var(--heading-color);
@@ -235,7 +234,7 @@ main section{
     flex-wrap: wrap;
     max-width: 1170px;
     margin: 0 auto 50px ;
-    gap:  15px 8px;
+    gap:  35px 8px;
 }
 .game-container{
     display: flex;
@@ -419,7 +418,7 @@ main section{
         grid-template-columns: repeat(3, 3fr);
         gap: 20px;
         position: relative;
-        top: 110px;
+        top: 10px;
        }
        .game-container img{
         width: 22%;
@@ -432,7 +431,7 @@ main section{
     /* Footer Section */
     .footer{
         position: relative;
-        top: 100px;
+        top: 10px;
     }
     .footer-link{
         grid-template-columns: repeat(3,2fr);
