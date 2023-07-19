@@ -133,8 +133,8 @@ nav li a{
 
 /* Main Section */
 main section{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
@@ -183,6 +183,7 @@ main section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 500px;
 }
 .play-content{
     position: relative;
@@ -228,36 +229,36 @@ main section{
 }
 
 /* More Game Section Style */
-
-.more-game-content{
-    display: grid;
-    grid-template-columns:repeat(5,1fr);
-    gap: 30px;
-    
+.game{
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto 50px ;
+    gap:  15px 8px;
 }
-
-
-.more-game{
+.game-container{
     display: flex;
     align-items: center;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    padding: 8px 15px;
+    border: 1px solid white;
+   
 }
-
-.more-game img{
-    width:20% ;
+.game-container:hover{
+    color: #F948B2;
+    border: 1px solid #F948B2;
+    width: fit-content;
+    border-radius: 30px;
 }
-.more-game p{
-    margin-left: 10px;
-    font-size: 0.8rem;
-}
-
-
+  .game-container img{
+     width: 38px;
+     margin-right: 15px;
+  }
+  .game-container p{
+    color:var(--heading-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+      }
 
 /* Footer Section Style */
 .footer{
@@ -413,21 +414,26 @@ main section{
         left: 90px;
     }
        /* More Game */
-       .more-game-content{
-        grid-template-columns:repeat(3,3fr);
-        margin-right: 20px;
-    }
-    .more-game img{
-        width: 30%;
-    }
-    .more-game p{
-        font-size: 0.6rem;
-    }
-    .game{
-       padding: 0 5px;
-    }
+       .game{
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        gap: 20px;
+        position: relative;
+        top: 110px;
+       }
+       .game-container img{
+        width: 22%;
+       }
+       .game-container p{
+        font-size: 0.5rem;
+        font-weight: 600;
+       }
 
     /* Footer Section */
+    .footer{
+        position: relative;
+        top: 100px;
+    }
     .footer-link{
         grid-template-columns: repeat(3,2fr);
     }
