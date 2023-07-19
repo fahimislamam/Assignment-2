@@ -65,6 +65,16 @@ nav li a{
     text-decoration: none;
     color: var(--nav-link-color);
 }
+.btn-icon{
+    border-radius: 8px;
+    border: 0;
+    background: #0b02231a;
+    padding: 11px 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 /* Banner Section Style */
 .banner{
     display: flex;
@@ -124,7 +134,7 @@ nav li a{
 /* Main Section */
 main section{
     margin-top: 50px;
-    margin-bottom: 50px;
+
 }
 
 /*Online Games video Section Style*/
@@ -288,8 +298,9 @@ main section{
     font-weight: 500;
 }
 .footer-link-icon{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin: 0 310px;
     padding-bottom:55px ;
 }
 .footer-link-icon a{
@@ -299,7 +310,9 @@ main section{
 
 }
 .footer-policy{
-    display: flex;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    /* margin: 0 170px; */
     justify-content: center;
     padding-bottom: 40px;
 }
@@ -322,7 +335,7 @@ main section{
 /* Responsive  Style*/
 /* Mobile Device */
 @media screen and (max-width:576px) {
-    nav, .banner, .games-video, .play-instantly{
+    nav, .banner, .games-video, .play-instantly, .copyright{
         flex-direction: column;
     }
     nav > ul{
@@ -348,6 +361,13 @@ main section{
         margin-right: 8px;
 
     }
+    .btn-icon{
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+}
     .banner img{
         margin: 0 35px;
     }
@@ -388,6 +408,35 @@ main section{
         position: relative;
         top: 190px;
         left: 90px;
+    }
+    /* Footer Section */
+    .footer-link{
+        grid-template-columns: repeat(3,2fr);
+    }
+    .footer-link a{
+        font-size: 0.9rem;
+    }
+    .footer-link-icon{
+        grid-template-columns: repeat(3,2fr);
+        margin: 20px 90px;
+    }
+    .footer-link-icon a{
+        padding: 10px 0;
+    }
+    .footer-policy{
+        grid-template-columns: repeat(2,2fr);
+
+
+    }
+    .footer-policy a{
+        padding: 10px;
+        gap: 50px;
+        font-size: 0.74rem;
+        margin-left: 40px;
+    }
+    .copyright p{
+        font-size: 0.8rem;
+        margin-left: 22px;
     }
 
 }
