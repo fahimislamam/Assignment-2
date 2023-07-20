@@ -232,8 +232,8 @@ main section{
     justify-content:center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1170px;
-    margin: 0 auto 50px ;
+    /* max-width: 1170px;
+    margin: 0 auto 50px ; */
     gap:  35px 8px;
 }
 .game-container{
@@ -241,10 +241,12 @@ main section{
     align-items: center;
     padding: 8px 15px;
     border: 1px solid white;
-   
 }
 .game-container:hover{
-    color: #F948B2;
+    background:var(--linear-pink-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border: 1px solid #F948B2;
     width: fit-content;
     border-radius: 30px;
@@ -459,7 +461,7 @@ main section{
     }
     .copyright p{
         font-size: 0.7rem;
-        margin-left: 20px;
+        text-align: center;
     }
  
 }
