@@ -232,8 +232,6 @@ main section{
     justify-content:center;
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 1170px;
-    margin: 0 auto 50px ; */
     gap:  35px 8px;
 }
 .game-container{
@@ -418,9 +416,12 @@ main section{
        .game{
         display: grid;
         grid-template-columns: repeat(3, 3fr);
-        gap: 20px;
+        gap: 11px;
         position: relative;
         top: 10px;
+       }
+       .game-container{
+        padding:5px 0;
        }
        .game-container img{
         width: 22%;
@@ -450,8 +451,6 @@ main section{
     }
     .footer-policy{
         grid-template-columns: repeat(2,2fr);
-
-
     }
     .footer-policy a{
         padding: 10px;
